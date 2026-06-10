@@ -117,3 +117,92 @@ body  {
   padding-left: 0;
   padding-right: 0;
  }
+
+ /* ================= RESPONSIVE FIXES =================
+
+/* Prevent horizontal scroll */
+html, body {
+  overflow-x: hidden;
+}
+
+/* Make images fully responsive */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Ensure cards wrap properly */
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* Tablet View */
+@media (max-width: 992px) {
+
+  .navbar {
+    height: auto;
+    padding: 0.5rem 1rem;
+  }
+
+  .f-info {
+    height: auto;
+    padding: 1rem 0;
+  }
+
+  .show-img {
+    height: 40vh;
+  }
+
+  .btns {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+
+  body {
+    font-size: 0.95rem;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .listing-card {
+    margin-bottom: 1.5rem;
+  }
+
+  .show-img {
+    height: 35vh;
+  }
+
+  .f-info-links,
+  .f-info-socials,
+  .f-info-brand {
+    margin-bottom: 0.5rem;
+  }
+
+}
+
+/* Small Phones */
+@media (max-width: 480px) {
+
+  .navbar {
+    padding: 0.5rem;
+  }
+
+  .show-img {
+    height: 30vh;
+  }
+
+  .btns {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+} */
