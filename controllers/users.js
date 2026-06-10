@@ -1,7 +1,7 @@
 const User = require("../models/user.js");
 
 module.exports.renderSignupForm = (req, res)=> {
-    res.render("users/signup.ejs", {hideNavbar: true});
+    res.render("users/signup.ejs", {hideNavbar: true, hideFooter: true});
 };
 
 module.exports.signUp = async(req,res) => {
@@ -23,7 +23,7 @@ module.exports.signUp = async(req,res) => {
 };
 
 module.exports.renderLoginForm = (req, res)=> {
-    res.render("users/login.ejs", {hideNavbar: true});
+    res.render("users/login.ejs", {hideNavbar: true, hideFooter: true});
 };
 
 module.exports.login = (req,res) => {
